@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #4A90E2;
+  --accent-color: #F5A623;
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --dark-bg: #1e1e1e;
+  --light-bg: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header, section, footer {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.about, .projects, .contact, .blog {
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.project {
+  padding: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.theme-toggle {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.custom-graphic {
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
+  display: block;
+}
+
+.dark-mode {
+  background-color: var(--dark-bg);
+  color: white;
+}
+
+.dark-mode .about, .dark-mode .projects, .dark-mode .contact, .dark-mode .blog {
+  background-color: #333;
+  color: white;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  margin-top: 1rem;
+  background-color: var(--accent-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Creative Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Creative Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm a creative web designer passionate about turning ideas into beautiful and functional websites. Fun facts: I love retro games, collect vinyl records, and enjoy sketching futuristic cityscapes!</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project"><h3>Responsive Landing Page</h3><p>A clean, mobile-friendly layout using Flexbox.</p></div>
+      <div class="project"><h3>CSS Art Gallery</h3><p>Creative illustrations made with pure CSS.</p></div>
+      <div class="project"><h3>Minimal Portfolio</h3><p>A simple, elegant portfolio layout.</p></div>
+    </div>
+  </section>
+
+  <section id="blog" class="blog">
+    <h2>My Blog</h2>
+    <p><strong>June 1, 2025</strong>: Just finished this portfolio – thrilled with how it turned out! 🎉</p>
+    <p><strong>May 20, 2025</strong>: Learned so much about Flexbox and Grid. CSS is powerful!</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <div class="theme-toggle">
+    <button onclick="document.body.classList.toggle('dark-mode')">Toggle Dark Mode</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Creative Portfolio</p>
+    <img class="custom-graphic" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23F5A623'/></svg>" alt="Custom Graphic">
+  </footer>
+</body>
+</html>
